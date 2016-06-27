@@ -1,0 +1,14 @@
+{
+  "name": "AppXpressLabs",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.1.1"
+  },
+  "dependencies": {
+    "hammerjs": "hammer.js#~2.0.4",
+    "Ionicons": "ionicons#~2.0.1",
+    "ngCordova": "~0.1.23-alpha",
+    "signature_pad": "~1.5.2",
+    "pouchdb": "~5.2.0"
+  }
+}

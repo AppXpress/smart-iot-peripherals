@@ -1,0 +1,13 @@
+<ion-view view-title="HOME">
+    <ion-content scroll="false">
+        <signature-pad accept="accept" clear="clear"  ></signature-pad>
+        <button ng-click="clear()">Clear signature</button>
+        <button ng-click="signature = accept()">Sign</button>
+        <div class="row">
+            <div class="col noData">
+                <i class="icon ion-ios-information-outline"></i>
+                <br /> No Data Available
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

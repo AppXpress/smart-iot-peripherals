@@ -1,0 +1,36 @@
+<ion-view view-title="Chats">
+    <ion-content>
+        <ion-list>
+<!--            <ion-item class="item-remove-animate item-thumbnail-right item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">-->
+            <ion-item class="item-remove-animate item-thumbnail-right item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#">
+
+                
+                <div class="row">
+                    <div class="col" style="color:gray; font-size:small;text-align: center;">
+                        <svg height="100" width="100">
+  <circle cx="50" cy="50" r="50" stroke="black" stroke-width="0" fill="green" />
+</svg>
+                    </div>
+                    <div class="col col-75">
+                        <h3>{{chat.name}}</h3>
+                        <lable style="">Expire in two days</lable>
+                    </div>
+                    
+                </div>
+                <ion-option-button class="button-positive" ng-click="">
+                    Share
+                </ion-option-button>
+                <ion-option-button class="button-dark" ng-click="remove(chat)">
+                    Archive
+                </ion-option-button>
+                <ion-option-button class="button-assertive" ng-click="remove(chat)">
+                    Delete
+                </ion-option-button>
+
+                <!--        <i class="icon ion-chevron-right icon-accessory"></i>-->
+
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

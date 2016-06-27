@@ -1,0 +1,26 @@
+.DS_Store
+classes
+target
+resources
+bin
+
+
+.idea
+.settings
+gen
+node_modules
+platforms
+plugins
+hooks
+bower_components
+
+
+# Logs #
+######################
+*.log
+*.classpath
+*.project
+*.xccheckout
+*.xcuserstate
+*.xcbkptlist
+*.xcodeproj

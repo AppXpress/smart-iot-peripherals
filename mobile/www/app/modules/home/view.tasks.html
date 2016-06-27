@@ -1,0 +1,69 @@
+<ion-view view-title="Test">
+    <style>
+        .sub-header{
+            display:block; 
+            background:black;
+        }
+        .sub-header h2 {
+            padding: 10px 25px 0px 25px;
+            color: whitesmoke
+        }
+        .sub-header p {
+            padding: 0 25px 0px 25px;
+            color: whitesmoke
+        }
+        .content {
+            margin-top: 400px;
+            background: url('http://www.titanui.com/wp-content/uploads/2014/12/08/Dark-Grunge-Metal-Background-Vector.jpg');
+        }
+        .item-complex .item-content{
+            background: #3F463F;
+            padding-right: 20px;
+        }
+        .item{
+                border-radius: 20px;
+        }
+        .item-status{
+            background: #7B7B7B;
+        }
+    </style>
+    <div class="sub-header">
+        <h2>Ford Mustang</h2>
+        <p>VIN - 876234789234987634</p>
+        <img src="http://trueautosite.com/wp-content/uploads/images/ford-mustang_2059.jpg" style="width:100%; height:auto" />
+    </div>
+    <ion-content class="content">
+
+        <ion-list>
+            <ion-item class="item-remove-animate" ng-repeat="chat in chats" type="item-text-wrap" href="#">
+                <div style="display:block;position:relative">
+                <div style="width:80%;float:left">
+                     <h2 style="color:white;font-weight:bold">{{chat.name}}</h2>
+                    <lable style="">Expire in two days</lable>
+                </div>
+                <div class="item-status" style="    width: 50px;
+    float: right;
+    min-height: 40px;
+    padding: 15px 15px;
+    border-radius: 40px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: larger;">
+                    <i class="icon ion-checkmark-round"></i>
+                </div>
+               </div>
+                
+                <ion-option-button class="button-dark" ng-click="remove(chat)">
+                    archive
+                </ion-option-button>
+                <ion-option-button class="button-assertive" ng-click="remove(chat)">
+                    Delete
+                </ion-option-button>
+
+                <!--        <i class="icon ion-chevron-right icon-accessory"></i>-->
+
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
